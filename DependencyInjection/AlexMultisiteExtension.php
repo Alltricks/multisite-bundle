@@ -24,10 +24,10 @@ class AlexMultisiteExtension extends Extension
 
         $container->setParameter('alex_multisite.default_branding', $config['default_branding']);
         $container->setParameter('alex_multisite.default_locale', $config['default_locale']);
+        $container->setParameter('alex_multisite.sort_routes', $config['sort_routes']);
 
         $loader->load('site_context.xml');
         $loader->load('framework_extra.xml');
-        $loader->load('routing.xml');
         $loader->load('twig.xml');
 
         $this->addBrandingDefinition($container, $config['brandings']);

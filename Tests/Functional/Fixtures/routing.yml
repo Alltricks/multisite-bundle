@@ -1,3 +1,0 @@
-_demo:
-    resource: @AlexMultisiteDemoBundle/Controller
-    type: annotation
