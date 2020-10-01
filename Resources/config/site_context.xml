@@ -5,7 +5,7 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="site_context" class="Alex\MultisiteBundle\Branding\SiteContext">
+        <service id="site_context" class="Alex\MultisiteBundle\Branding\SiteContext" public="true">
              <!-- injected by AlexMultisiteExtension -->
             <argument type="collection"></argument>
             <argument>%alex_multisite.default_branding%</argument>
